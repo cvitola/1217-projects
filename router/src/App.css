@@ -1,38 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
 .App {
+  display: flex;
   text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App h1{
+  padding: 10px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App h2{
+  padding: 10px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login{
   display: flex;
   flex-direction: column;
+  padding: 20px 0;
   align-items: center;
+}
+
+.login h1{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.login form{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);  
+  border: darkgreen;
+  box-shadow: 1px 1px 1px;
+  border-radius: 10px;
+  max-width: 20rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login form input{
+  padding: 10px 0;
+  margin:  10px 10px;
+}
+.login form button{
+  padding: 10px 0;
+  margin:  10px 10px;
+
+  background-image: linear-gradient(62deg, #fcfa8e 0%, #fcdfc3 100%);  
+  border: none;
+  box-shadow: 1px 1px 1px grey;
+}
+
+.login small{
+  padding: 10px 0;
+  border: solid 1px black;
+  border-radius: 10px;
+  margin: 10px 10px;
+  cursor: pointer;
+}
+.error{
+  color: red;
+  font-size: 12px;
 }

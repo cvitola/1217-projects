@@ -1,0 +1,10 @@
+body{
+
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #23074d;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #cc5333, #23074d);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #cc5333, #23074d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+}
