@@ -1,6 +1,6 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 import ShoppingCart from "../ShoppingCart/ShoppingCart";
-import NavBar from "../NavBar/NavBar"
+import Main from '../Main/Main'
 
 /*
 import Products from "../pages/Products/Products"
@@ -10,12 +10,13 @@ import Verduras from '../pages/Products/Verduras';*/
 
 const Router = () => {
     return (
-        <BrowserRouter>
+
             <Routes>
-                <Route path="/" element={<NavBar />}/>
+                <Route path='/main' element={<Main/>} />
                 <Route path='/shopping' element={<ShoppingCart />} />
+                <Route path='/' element={<Main />} />
             </Routes>
-        </BrowserRouter>
+
     )
 }
 
